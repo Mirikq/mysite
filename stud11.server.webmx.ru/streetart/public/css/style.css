@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+html {
+	height: 100%;
+	background-image: url("../images/fon.jpg")
+}
+
+body {
+	
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	color: white; 
+	text-align: justify; 
+	line-height:1.5;
+	text-shadow: 2px 2px 2px black;
+}
+
+
+.wrapper {
+	margin:0 auto;
+	height: auto !important;
+	width:80%;
+	
+}
+
+/* Стили формы
+-----------------------------------------------------------------------------*/
+form {
+	margin:  0 auto;
+	width: 600px;
+}
+
+input, select, textarea, button {
+	height: 50px;
+	width: 100%;
+	margin: 10px 0;
+	border: solid 1px black;
+	padding-left: 10px;
+	font-size: 14pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+input[type=file] {
+	border: none;
+	height: 30px;
+	padding: 0;
+}
+input[type=submit],
+input[type=button],
+button {
+	padding: 0;
+	border: none;
+	color: white;
+	background-color: black;
+	cursor: pointer;
+}
+textarea {
+	padding: 10px;
+	height: 150px;
+}
+
+/* настройки оформления блока Header
+-----------------------------------------------------------------------------*/
+
+/* настройки оформления основной части страницы
+-----------------------------------------------------------------------------*/
+.content {
+	width:80%;
+	margin:0 auto;
+	padding:2%;
+	overflow:hidden;
+}
+	.content>p { padding:1%;}
+	.content ul {text-align: left;}
+	.content hr {margin: 50px 0}
+		
+h1 	{ text-align: center;} 
+	
+h1, h2, h3{  /* форматирование для нескольких элементов */
+	font-style: italic;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+
+.row{
+	float:left;
+	width:100%;	
+	padding:5px;
+	text-align:center;
+}
+
+/*  настройки оформления блока Footer
+-----------------------------------------------------------------------------*/
+footer {background-color: #000; }
+
+footer>div{
+	margin: 0 auto 0;
+	padding-top:1%;
+	padding-bottom:1%;
+	width: 80%;
+}
+
+footer>div>p {
+	font-size: 12pt; 
+	font-style: italic;
+	color: #ffffff;
+	text-align: center;
+}
+
+/*  настройки оформления меню
+-----------------------------------------------------------------------------*/
+nav{ 
+	width: 100%;
+	background-color: black;
+} 
+
+ul.menu {
+	width: 80%;
+	margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 15px 30px;
+    background-color: black;
+    text-decoration: none;
+	font-size: 10pt;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: none;
+}
+ul.menu > li > a:hover {
+    background-color: #fff;
+	color: #000;
+	text-shadow: none;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+	width: 350px;
+}
+ul.submenu > li {
+    display: block;
+    background-color: #fff;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 15px 30px;
+    color: #000;
+    background-color: black;
+    text-decoration: none;
+	font-size: 10pt;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: none;
+}
+ul.submenu > li > a:hover {
+    background-color: #fff;
+	color: #000;
+	text-shadow: none;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+
+
+
+
+
+
+
+  
+
+
+
